@@ -4,7 +4,7 @@ import streamlit as st
 
 
 # loading the saved model
-loaded_model = pickle.load(open('C:/Users/arkou/Desktop/deployment/model.pkl', 'rb'))
+loaded_model = pickle.load(open('model.pkl', 'rb'))
 
 
 # creating a function for Prediction
