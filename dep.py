@@ -9,7 +9,7 @@ loaded_model = pickle.load(open('model.sav','rb'))
 
 # creating a function for Prediction
 
-def diabetes_prediction(input_data):
+def detection(input_data):
     
 
     # changing the input_data to numpy array
@@ -54,7 +54,7 @@ def main():
     # creating a button for Prediction
     
     if st.button('resultat'):
-        pred = diabetes_prediction([float(trafic_otarie_prepaid), float(trafic_IN_prepaid), float(trafci_prs_all), float(trafic_otarie_all), float(trafic_etoile6), float(trafic_etoile3), float(trafic_vpn)])
+        pred = detection([float(trafic_otarie_prepaid), float(trafic_IN_prepaid), float(trafci_prs_all), float(trafic_otarie_all), float(trafic_etoile6), float(trafic_etoile3), float(trafic_vpn)])
         
         
     st.success(pred)
